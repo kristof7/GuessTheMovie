@@ -12,8 +12,8 @@ public class GameUI {
         int guessNumber = 10;
         String lettersGuessed = "";
 
-        System.out.println("Film to guess(hidden):  " + hidden);
-        System.out.println("Input first letter (use only lower-case letters):");
+        System.out.println("Movie to guess(hidden):  " + hidden);
+        System.out.println("Enter a letter (use only lower-case letters):");
 
         //----Game loop-start---------------------
         for (int i = 0; i <= 10; i++) {
@@ -33,9 +33,7 @@ public class GameUI {
                     System.out.println("You already choose this letter, try again..");
                     break;
                 }
-
             }
-
             //----Inner loop-end------------------
             boolean guessContains = film.contains(String.valueOf(guess));
             if (!guessContains && !checkGuess) {
@@ -56,7 +54,8 @@ public class GameUI {
             }
             System.out.println("You have " + guessNumber + " guesses left");
             System.out.println("Letter guessed: " + lettersGuessed);
-            System.out.println("Film to guess:  " + hidden);
+            System.out.println("Movie title:  " + hidden);
+            System.out.println("Enter a letter:");
         }
     }
 

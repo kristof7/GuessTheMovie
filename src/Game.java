@@ -31,7 +31,7 @@ public class Game {
         filmShort = filmShort.replaceAll(" ", "");
 
         System.out.println();
-        System.out.println("Try to guess the random movie title");
+        System.out.println("Try to guess the name of the movie by entering the letters one by one");
         System.out.println("You will have 10 guesses");
 
         GameUI game = new GameUI();
